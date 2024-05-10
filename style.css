@@ -1,0 +1,61 @@
+
+.main{
+  position: relative;
+  overflow: hidden;
+  margin-top: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+
+}
+  header {
+    padding: 10px;
+    text-align:left;
+    padding: 10px;
+    margin: 30px;
+  }
+  .mode {
+    float:right;
+}
+
+  nav {
+  display: inline-block;
+  }
+
+  nav a {
+  text-decoration: none;
+  margin: 0 10px;
+  }
+
+
+  nav a:hover {
+  color:#D1884F;
+  }
+  
+  .part1 p {
+    white-space: pre;
+  }
+  .part1 img{
+    position: absolute;
+    top: 0px;
+    right:0px;
+    width: 300px;
+    height:300px;
+    }
+  
+    .part2 p {
+      white-space: pre;
+    }
+
+    .part2 img{
+      position: absolute;
+      top: 350px;
+      right:0px;
+      width:300px;
+      height:300px;
+      }
+    
+
+  .dark{
+    background-color: #222;
+    color: #e6e6e6;
+  }

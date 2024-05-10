@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+	<title>Blog Page</title> 
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+	</script>
+
+</head>
+
+<body>
+  <div class="mode">
+    <button onclick="myFunction()">Switch mode</button> 
+</div>
+	
+  <header>
+    <nav class="navigation">
+      <a href="#home"><i class="fa fa-fw fa-home"></i>Home</a>
+      <a href="#About"><i class="fa fa-fw fa-user"></i>About </a>
+    </nav>
+  </header>
+
+
+    <div class = "main">
+    <h1>Healthy Living Hub</h1>
+
+    <div class = "part1">
+    <h3>"Foods to Boost Your Immune System"</h3>
+	  <p>      It’s no secret that you are what you eat. 
+      Research over the years has shown that a well-balanced 
+      diet filled with nutritious foods is your strongest defense 
+      against chronic and dangerous conditions such as
+      heart disease, obesity, and diabetes. 
+      Let’s take a closer look at your immune system and which 
+      foods affect your body’s ability to respond to threats.<a href="https://www.lifespan.org/lifespan-living/foods-boost-your-immune-system">read more</a>
+    </p>		
+      <img src="p1.jpg" alt="Lemon">
+    </div>
+
+	  <br> <br>
+    <br> <br>
+    
+    <div class = "part2">
+     <h3>"Creating a Home Workout Routine: A Step-by-Step Guide"</h3>
+      <p>        Whether you’re working at home, traveling, or social distancing, 
+        it isn’t always possible to get to the gym. But these tips can help
+        you stay active and healthy whatever your circumstances.<a href="https://www.helpguide.org/articles/healthy-living/exercise-during-coronavirus.htm">read more</a>
+      </p>
+      <img src="p2.jpeg">
+    </div> 
+      <br> <br>
+
+      <script>
+        function myFunction() {
+            let element = document.body;
+            element.classList.toggle("dark");
+        }
+    </script>
+</body>
+</html>
