@@ -1,61 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+}
 
-.main{
-  position: relative;
+.mode button{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  outline: none;
+  background-color:rgb(209, 243, 198);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+.tab-container {
   overflow: hidden;
-  margin-top: 100px;
-  margin-right: 150px;
-  margin-left: 80px;
+  text-align: left;
 
 }
-  header {
-    padding: 10px;
-    text-align:left;
-    padding: 10px;
-    margin: 30px;
-  }
-  .mode {
-    float:right;
+
+.tab{
+  padding: 10px 20px;
+  cursor: pointer;
+  border:#e6e6e6;
+  outline: none;
+  background-color:rgb(209, 243, 198);
+  transition: background-color 0.3s ease;
 }
 
-  nav {
-  display: inline-block;
-  }
 
-  nav a {
-  text-decoration: none;
-  margin: 0 10px;
-  }
+.tab-content {
+  padding: 20px;
+  display: none;
+} 
+
+.mode {
+  position: absolute;
+  left: 95%;
+  right:5%;
+}
+
+h1{
+  text-align: center;
+}
+
+#tab1 img {
+  height:300px;
+  width:550px;
+  position: absolute;
+  right: 50%;
+  left: 50%;
+}
+
+#tab1 p{
+  white-space: pre;
+}
 
 
-  nav a:hover {
-  color:#D1884F;
-  }
-  
-  .part1 p {
-    white-space: pre;
-  }
-  .part1 img{
-    position: absolute;
-    top: 0px;
-    right:0px;
-    width: 300px;
-    height:300px;
-    }
-  
-    .part2 p {
-      white-space: pre;
-    }
+#tab2 img {
+  height:500px;
+  width: 500px;
+  position: absolute;
+  right: 50%;
+  left: 50%;
+}
 
-    .part2 img{
-      position: absolute;
-      top: 350px;
-      right:0px;
-      width:300px;
-      height:300px;
-      }
-    
+
+#tab2 p{
+white-space: pre;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
 
   .dark{
     background-color: #222;
     color: #e6e6e6;
-  }
+}

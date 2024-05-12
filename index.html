@@ -7,59 +7,103 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 	<title>Blog Page</title> 
-	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
-	</script>
-
+  <script src="script.js"></script>
 </head>
+
 
 <body>
   <div class="mode">
-    <button onclick="myFunction()">Switch mode</button> 
+    <button onclick="myFunction()">Dark Mode</button> 
 </div>
-	
-  <header>
-    <nav class="navigation">
-      <a href="#home"><i class="fa fa-fw fa-home"></i>Home</a>
-      <a href="#About"><i class="fa fa-fw fa-user"></i>About </a>
-    </nav>
-  </header>
 
 
-    <div class = "main">
-    <h1>Healthy Living Hub</h1>
+<div class="tab-container">
+  <button class="tab" onclick="openTab(event, 'tab1')">Home</button>
+  <button class="tab" onclick="openTab(event, 'tab2')">Fitness</button>
+  <button class="tab" onclick="openTab(event, 'tab3')">Nutrition</button>
+  <button class="tab" onclick="openTab(event, 'tab4')">Connect</button>
+</div>
 
-    <div class = "part1">
-    <h3>"Foods to Boost Your Immune System"</h3>
-	  <p>      It’s no secret that you are what you eat. 
-      Research over the years has shown that a well-balanced 
-      diet filled with nutritious foods is your strongest defense 
-      against chronic and dangerous conditions such as
-      heart disease, obesity, and diabetes. 
-      Let’s take a closer look at your immune system and which 
-      foods affect your body’s ability to respond to threats.<a href="https://www.lifespan.org/lifespan-living/foods-boost-your-immune-system">read more</a>
-    </p>		
-      <img src="p1.jpg" alt="Lemon">
-    </div>
 
-	  <br> <br>
-    <br> <br>
+<h1>Stay Healthy And Happy</h1>
+<div id="tab1" class="tab-content">
+  <br><br>
+  <img src="p3.jpg" alt="Healthy life " >
+  <p>
+  <b>What is healthy living?</b>
+  "Healthy living" to most people means both physical and mental health 
+  are in balance or functioning well together. In many instances, physical
+  and mental health are closely linked, so that a change (good or bad) in one 
+  directly affects the other. Consequently, some of the tips will include 
+  suggestions for emotional and mental "healthy living."
+
+  <b>Healthy eating (diet and nutrition)</b>
+  All humans have to eat food for growth and maintenance of a healthy body,
+  but we humans have different nutrition requirements as infants, children (kids),
+  teenagers, young adults, adults, and seniors. For example, infants may require
+  feeding every 4 hours until they gradually age and begin to take in more solid 
+  foods. Eventually they develop into the more normal pattern of eating three times 
+  per day as young kids. However, as most parents know, kids, teenagers, and young adults
+  often snack between meals. Snacking is often not limited to these age groups because 
+  adults and seniors often do the same.
+
+  <b>Additional tips for healthy living</b>
+  Although there are many other risky behaviors that may impede an otherwise
+  healthy lifestyle (for example, working with toxic or radioactive materials, 
+  drug addiction, travel to areas with unusual endemic diseases), 
+  these are too numerous to cover in this general article. However, the reader is 
+  advised to visit such topic sites on MedicineNet.com, eMedicineHealth.com or WebMD.com 
+  because most of the specific articles will provide tips to avoid health-related problems.
+  <a href="https://www.medicinenet.com/healthy_living/article.htm">read more</a>
+</p>
+</div>
+
+
+
+<div id="tab2" class="tab-content" >
+  <img src="p4.jpg" alt="sport" >
+  <br><br>
+  <p>
+  <b>Home Workout and Fitness Tips: Exercising without the Gym</b>
+  Whether you’re working at home, traveling, or social distancing, 
+  it isn’t always possible to get to the gym. But these tips can help you stay active
+  and healthy whatever your circumstances.
+  
+  <b>The importance of staying active</b>
+  When you’re stuck at home, traveling with work, on vacation, or quarantining, 
+  it isn’t always easy to stick to an exercise routine or maintain your fitness goals.
+  You may only have limited access to fitness facilities or find it difficult
+  to adjust to a new routine. Perhaps you miss the camaraderie of your gym, 
+  the familiarity of swimming laps in your local pool, or the social connection 
+  from walking or hiking with your usual group of workout buddies.
+  If you’re used to attending a fitness class with a motivating instructor, 
+  you might also be disappointed in the intensity of workouts on your own.
+  
+  Maintaining an exercise routine at home or in a hotel room can seem more like 
+  a ‘should’ than a ‘want to’. And with so many of us out of work and struggling
+  financially at the moment, maintaining a gym membership and staying active can seem
+  like much less of a priority. However, even a small amount of activity can make a
+  huge difference to how well you think and feel. In fact, exercise is one of the 
+  most powerful tools we have for staying physically and mentally healthy—and you 
+  don’t need access to a gym or expensive health club to reap the rewards.
+  
+  Exercise can help ease depression, stress, and anxiety, and aid in the management
+  of chronic conditions, such as high blood pressure and diabetes. By finding new
+  ways to get moving and stay motivated, you can take charge of your mood and 
+  well-being, retain a sense of control during these days of great uncertainty,
+  and stay on track with your exercise goals even when your normal routine is 
+  disrupted.
+<a href="https://www.helpguide.org/articles/healthy-living/exercise-during-coronavirus.htm">read more</a>
+  </p>
+
+
+
+
+<div id="tab3" class="tab-content" style="display:none;">
+</div>
+<div id="tab4" class="tab-content" style="display:none;">
+  This is tab 4 content.
+</div>
     
-    <div class = "part2">
-     <h3>"Creating a Home Workout Routine: A Step-by-Step Guide"</h3>
-      <p>        Whether you’re working at home, traveling, or social distancing, 
-        it isn’t always possible to get to the gym. But these tips can help
-        you stay active and healthy whatever your circumstances.<a href="https://www.helpguide.org/articles/healthy-living/exercise-during-coronavirus.htm">read more</a>
-      </p>
-      <img src="p2.jpeg">
-    </div> 
-      <br> <br>
-
-      <script>
-        function myFunction() {
-            let element = document.body;
-            element.classList.toggle("dark");
-        }
-    </script>
 </body>
 </html>
