@@ -28,7 +28,9 @@ body {
   transition: background-color 0.3s ease;
 }
 
-
+#tab1 {
+  display: contents;
+}
 .tab-content {
   padding: 20px;
   display: none;
